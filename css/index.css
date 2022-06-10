@@ -36,8 +36,72 @@ body{
  
 }
 
+.caldero img{
+  height: 100%;
+  width: 100%;  
+  animation-name:caldero ;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+    
+}
+
+@keyframes caldero {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
 .logo{
-    color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 60px;
+
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 36px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#selected{
+    background: #F6615D;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.menu nav img{
+    display: none;
+}
+
+.menu .btn_menu{
+    display: none;
 }
 
 .contenedor-index {
@@ -226,53 +290,6 @@ body{
 
 
 }
-
-
-header{
-    
-/* background: linear-gradient(90deg, rgba(0,36,13,1) 9%, rgba(4,55,15,1) 39%, rgba(39,222,29,1) 100%, rgba(0,212,255,1) 100%); */
-
-background-image: url(/img/header.jpg);
-background-size: 100%;
-background-position: center;
-
-}
-
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    font-size: 2em;
-    text-transform: uppercase;
-
-}
-
-header .container{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   
-
-}
-
-header nav{
-    display: flex;
-    text-align: center;
-    padding-bottom: 25px;
-    text-align: center;
-
-}
-
-header a{
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-
 
 
 .bio{
@@ -522,19 +539,6 @@ img{
     }
 }
 
-
-@media screen and (max-width: 768px) {
-    .header {
-        text-align: center;
-    }
-
-    .container-bio .content-bio {
-        grid-column: 1/-1;
-    }
-    .container-bio .sidebar-bio {
-        grid-column: 1/-1;
-    }
-}
 
 
 @media screen and (max-width :768px) {
